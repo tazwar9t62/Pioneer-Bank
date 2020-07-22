@@ -9,3 +9,27 @@ html {
 body {
   padding: 100px;
 }
+
+#transaction-area {
+  display: none;
+}
+
+#deposit {
+  background-image: linear-gradient(45deg, slateblue, rgb(52, 31, 192));
+}
+
+#withdraw {
+  background-image: linear-gradient(45deg, lightsalmon, rgb(194, 89, 47));
+}
+
+#balance {
+  background-image: linear-gradient(45deg, orange, rgb(185, 125, 13));
+}
+
+#deposit,
+#withdraw,
+#balance {
+  border-radius: 10px;
+  padding: 10px 30px;
+  color: white;
+}

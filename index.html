@@ -24,10 +24,42 @@
 </head>
 
 <body>
+    <div class="container" id="login-area">
+        <h1 class="display-4 text-center">Welcome to Pioneer Bank</h1>
+        <div class="submit-area rounded shadow container m-md-5 p-md-5 ">
+            <h4>Login</h4>
 
-    <h1 class="display-4 text-center">Welcome to Pioneer Bank</h1>
+            <input type="text" name="email" id="email" placeholder="Enter your email" class="form-control">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control">
+            <br>
+            <button id="login-btn" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area" class="container">
+        <div class="row">
+            <div class="col-md-4 status">
+                <div id="deposit" class="d-block">
+                    <h5>Deposit</h5>
+                    <h2>&#36;<span>000</span></h2>
+                </div>
 
-    <footer class="container-fluid text-center">
+            </div>
+            <div class="col-md-4 status">
+                <div id="withdraw" class="d-block">
+                    <h5>Withdraw</h5>
+                    <h2>&#36;<span>000</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 status">
+                <div id="balance" class="d-block">
+                    <h5>Balance</h5>
+                    <h2>&#36;<span>000</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center fixed-bottom">
         <small class="text-muted">&copy; Tazwar 2020 || All rights reserved.</small>
     </footer>
 
@@ -41,6 +73,15 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- Js -->
+    <script>
+        let loginButton = document.getElementById("login-btn").addEventListener("click", function () {
+            let login = document.getElementById("login-area");
+            login.style.display = ("none");
+            let transaction = document.getElementById("transaction-area");
+            transaction.style.display = "block";
+        })
     </script>
 </body>
 
