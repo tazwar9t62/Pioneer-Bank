@@ -48,7 +48,7 @@
             <div class="col-md-4">
                 <div id="withdraw" class="d-block">
                     <h5>Withdraw</h5>
-                    <h2>&#36;<span id="currentWithdraw">000</span></h2>
+                    <h2>&#36;<span id="currentWithdraw">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -113,7 +113,7 @@
             const depositInputValue = document.getElementById("depositValue").value;
             const depositInput = parseFloat(depositInputValue);
             //Showing the value in Total Deposit
-            updateSpanText("currentDeposit", depositInput);
+            updateSpanText("currentDeposit", depositInput); //Calling the updateSpanText function
             document.getElementById("depositValue").value = ""; //To empty deposit input
             //Showing the value in Total Balance
             updateSpanText("currentBalance", depositInput);
